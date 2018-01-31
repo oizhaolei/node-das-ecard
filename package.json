@@ -1,0 +1,32 @@
+{
+  "name": "node-dashi-ecard",
+  "version": "0.1.0",
+  "homepage": "https://github.com/oizhaolei/node-dashi-ecard#readme",
+  "author": {
+    "name": "oizhaolei",
+    "email": "oizhaolei@gmail.com",
+    "url": "oizhaolei.github.io"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oizhaolei/node-dashi-ecard.git"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "dependencies": {
+    "md5": "*",
+    "moment": "*",
+    "node-jsencrypt": "^1.0.0",
+    "promise-redis": "0.0.5",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
