@@ -17,17 +17,20 @@ var ecard = new Ecard({
   url: "_URL_",
 });
 
-const data = await ecard.TokenRegister(mobile, password);
+const data = await ecard.fetch('func', {
+    params,
+});
 // {"RtnCode":0,"RtnInfo":"SUCCESS","data":[{“ToKenHours”:”2”}]}
 // {"RtnCode":1,"RtnInfo":"参数格式非法","data":[]}
 ```
 
 ## Test
 ```sh
-export PUBLIC_KEY=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC4lgGyIXmGHfbxSkWlG1OrMjKErNS2vq4Q1Ay/o3ne2sxcoITze5sShffHAOFbWK2YGz1c9MJVkw2YPkLGzQbwxkGi+1O5g4MiPAd6GS7GJhalDpip3Qu7arMpOZ6CUaxW8BB/OvaE1U6y7JbPsMlnQnJqSLQySiXq3A8XOzYPEwIDAQAB &&
-export IV=117,20,36,64,5,89,7,29 &&
-export URL=http://192.168.254.1:8080 &&
-export REDIS_URL=redis://:huarui1111@localhost:6379 &&
+npm install
+export PUBLIC_KEY=DUMMY_PUBLIC_KEY_QEBAQUAA4GNADCBiQKBgQC4lgGyIXmGHfbxSkWlG1OrMjKErNS2vq4Q1Ay/o3ne2sxcoITze5sShffHAOFbWK2YGz1c9MJVkw2YPkLGzQbwxkGi+1O5g4MiPAd6GS7GJhalDpip3Qu7arMpOZ6CUaxW8BB/OvaE1U6y7JbPsMlnQnJqSLQySiXq3A8XOzYPEwIDAQAB &&
+    export IV=17,2,3,6,5,8,7,2 &&
+    export URL=http://192.168.24.1:80 &&
+    export REDIS_URL=redis://localhost:6379
 mocha test/index.js
 ```
 
