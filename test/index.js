@@ -9,15 +9,25 @@ const ecard = new Ecard({
 });
 
 describe('module', () => {
-  // Token值注册
-  it('RegisterSystem', async () => {
-    const PhoneNO = '13601007397';
-    const EmpPWD = '';
+  // 用户注册
+  it('UserRegister', async () => {
+    const MethodName = 'UserRegister';
+    const PhoneNO = '18810981100';
 
-    const reg = await ecard.fetch('RegisterSystem', {
+    const reg = await ecard.fetch({
+      MethodName: 'UserRegister',
       PhoneNO,
-      EmpPWD,
     });
     console.log('reg', reg);
   });
+  // Token值注册
+  /* it('RegisterSystem', async () => {
+   *   const PhoneNO = '18810981100';
+
+   *   const reg = await ecard.fetch('RegisterSystem', {
+   *     PhoneNO,
+   *   });
+   *   console.log('reg', reg);
+   *   return;
+   * });*/
 });
