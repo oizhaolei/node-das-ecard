@@ -3,14 +3,14 @@
 ## Install
 
 ```sh
-$ npm install --save oizhaolei/node-dashi-ecard
+$ npm install --save oizhaolei/node-das-ecard
 ```
 
 
 ## Usage
 
 ```js
-var Ecard = require('node-dashi-ecard');
+var Ecard = require('node-das-ecard');
 var ecard = new Ecard({
   public_key: "_PUBLIC_KEY_",
   iv: "_IV_".split(','),
@@ -34,4 +34,4 @@ export PUBLIC_KEY=DUMMY_PUBLIC_KEY_QEBAQUAAAAAAAAAAAAAAAAlgGyIXmGHfbxSkWlG1OrMjK
 mocha test/index.js
 ```
 
-rsync -avz --delete --exclude node_modules/ --exclude .git /works/projects/yida/node-dashi-ecard/ yidalize_no2:/tmp/node-dashi-ecard/
+rsync -avz --delete --exclude node_modules/ --exclude .git /works/projects/yida/node-das-ecard/ yidalize_no2:/tmp/node-das-ecard/

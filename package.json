@@ -1,7 +1,7 @@
 {
-  "name": "node-dashi-ecard",
+  "name": "node-das-ecard",
   "version": "0.1.0",
-  "homepage": "https://github.com/oizhaolei/node-dashi-ecard#readme",
+  "homepage": "https://github.com/oizhaolei/node-das-ecard#readme",
   "author": {
     "name": "oizhaolei",
     "email": "oizhaolei@gmail.com",
@@ -15,7 +15,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/oizhaolei/node-dashi-ecard.git"
+    "url": "https://github.com/oizhaolei/node-das-ecard.git"
   },
   "scripts": {
     "prepublish": "gulp prepublish",
