@@ -33,4 +33,4 @@ export PUBLIC_KEY=DUMMY_PUBLIC_KEY_QEBAQUAAAAAAAAAAAAAAAAlgGyIXmGHfbxSkWlG1OrMjK
 mocha test/index.js
 ```
 
-rsync -avz --delete --exclude node_modules/ --exclude .git /works/projects/yida/node-das-ecard/ yidalize_no2:/tmp/node-das-ecard/
+rsync -avz --delete --exclude node_modules/ --exclude .git /tmp/node-das-ecard/ yidalize_no2:/tmp/node-das-ecard/
