@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "express": "^4.16.2",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.13",
     "md5": "*",
     "moment": "*",
     "node-jsencrypt": "^1.0.0",
